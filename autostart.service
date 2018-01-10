@@ -1,0 +1,10 @@
+[Unit]
+Description=Autostart service
+
+[Service]
+ExecStart=/usr/bin/autostart.sh
+KillMode=process
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
